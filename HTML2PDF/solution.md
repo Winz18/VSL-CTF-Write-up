@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/cd8ad12a-0bd4-4fb1-8746-2a3bf1831559)
 
-Vào năm 2019, thư viện ReportLab từng gặp một lỗ hổng tương tự dẫn đến thực thi mã từ xa thông qua thuộc tính Color của thẻ HTML. Nội dung của thuộc tính này được đánh giá trực tiếp như một biểu thức Python bằng hàm eval, do đó có thể dẫn đến việc thực thi mã độc. Để giảm thiểu vấn đề, ReportLab đã triển khai một môi trường sandbox, gọi là rl_safe_eval. Môi trường này được loại bỏ tất cả các hàm tích hợp sẵn của Python và thay thế chúng bằng các hàm được ghi đè nhằm đảm bảo chỉ các đoạn mã an toàn của thư viện mới được thực thi, trong khi chặn truy cập vào các hàm và thư viện nguy hiểm có thể dẫn đến xây dựng mã Python độc hại.
+Vào năm 2019, thư viện ReportLab từng gặp một lỗ hổng tương tự dẫn đến thực thi mã từ xa thông qua thuộc tính Color của thẻ HTML. Nội dung của thuộc tính này được sử dụng như một biểu thức Python bằng hàm eval, do đó có thể dẫn đến việc thực thi mã độc. Để giảm thiểu vấn đề, ReportLab đã triển khai một môi trường sandbox, gọi là rl_safe_eval. Môi trường này được loại bỏ tất cả các hàm tích hợp sẵn của Python và thay thế chúng bằng các hàm được ghi đè nhằm đảm bảo chỉ các đoạn mã an toàn của thư viện mới được thực thi, trong khi chặn truy cập vào các hàm và thư viện nguy hiểm có thể dẫn đến xây dựng mã Python độc hại.
 
 ```python
 class __RL_SAFE_ENV__(object):

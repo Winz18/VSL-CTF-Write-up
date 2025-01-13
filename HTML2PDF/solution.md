@@ -163,4 +163,5 @@ Mục tiêu là tìm kiếm và đọc flag, vì đây là 1 challenge blackbox 
 
 => Flag: VSL{67786e838bcf22c75b7f2d68b0e9915b}
 
-
+### Tham khảo:
+https://github.com/c53elyas/CVE-2023-33733/tree/master

@@ -157,8 +157,7 @@ Word = orgTypeFun('Word', (str,), {
   ]
   ```
 ### Áp dụng vào giải challenge
-Mục tiêu là tìm kiếm và đọc flag, vì đây là 1 challenge blackbox nên ta sẽ không biết được vị trí chính xác của flag. Do webapp bị chặn gửi HTTP request từ server ra ngoài nên ta không thể mở reverse shell được.
-Giải pháp mình đưa ra là ghi kết quả thực thi lệnh và chuyển output đầu ra vào static file của webapp. Sau đó ta chỉ cần truy cập vào file ấy và đọc flag.
+Mục tiêu là tìm kiếm và đọc flag, vì đây là 1 challenge blackbox nên ta sẽ không biết được vị trí chính xác của flag. Do webapp được thiết kế để ngăn cản kết nối từ server ra ngoài nên ta không thể mở reverse shell được. Giải pháp mình đưa ra là ghi kết quả thực thi lệnh và chuyển output đầu ra vào static file của webapp. Sau đó ta chỉ cần truy cập vào file ấy và đọc flag.
 ![image](https://github.com/user-attachments/assets/cff27a2c-f8cd-4b57-b716-1fedf25202a1)
 ![image](https://github.com/user-attachments/assets/63915522-4f9f-49db-9d56-fea6df710b52)
 
